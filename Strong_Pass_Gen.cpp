@@ -3,8 +3,8 @@
 #include <ctime>
 
 using namespace std;
-static const char alphnum[] = "ABCDEFGHIJKLMNOPQRST" "0123456789" 
-"abcdefghijklmnopqrst" "!@#$%^&";
+static const char alphnum[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "0123456789" 
+"abcdefghijklmnopqrstuvwxyz" "!@#$%^&";
 int strLen = sizeof(alphnum)-1;
 
 char GenRand(){
