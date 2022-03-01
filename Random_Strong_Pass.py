@@ -2,7 +2,7 @@ import random
 print("Welcome to your Password Generator")
 
 #characters used in making the password
-chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~`! @#$%^&*()_-+={[}]|\:;<,>.?/"
+chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&"
 
 num = input("How many Passwords you want to generate? ")
 num = int(num)  #inputing number of passwords to generate
