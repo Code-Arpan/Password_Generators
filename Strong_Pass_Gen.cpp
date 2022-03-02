@@ -3,12 +3,11 @@
 #include <ctime>
 
 using namespace std;
-static const char alphnum[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "0123456789" 
-"abcdefghijklmnopqrstuvwxyz" "!@#$%^&";
+static const char alphnum[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&";
 int strLen = sizeof(alphnum)-1;
 
-char GenRand(){
-    return alphnum[rand() % strLen];
+char GenRand(){         //generating random characters
+    return alphnum[rand() % strLen];   
 }
 
 int main(){ 
@@ -16,15 +15,14 @@ int n, c=0, s=0;
 srand(time(0));
 cout<<"What length of password would you like to generate? ";
 cin>>n;
-cout<<n<<endl;
-cout<<"Here is your unique and strong password: ";
+cout<<"Here is your unique password : ";
 N:
 char C;
 string D;
 
 for(int z=0; z<n; z++){
     C = GenRand();
-    D+=C;
+    D+=C;      //concating the random chars & creating a random password
     if (isdigit(C)){
         c++;
     }
@@ -36,6 +34,6 @@ if (n > 2 && (s == 0 || c == 0)){
     goto N;
 }
 cout<<D;
-cout<<endl<<endl<<"Thank you for using this ! ";
+cout<<"\n\n Thank you for using this ! ";
 return 0;
 }
